@@ -1,0 +1,163 @@
+/*-------MUSIC PLAYER BY GLENTHEMES-------*/
+.glenplayer {
+    position:fixed;
+    left:0;
+    bottom:30px; /* position from bottom of screen */
+    width:65px;
+    height:63px;
+}
+
+.dough {
+    z-index:999997;
+    position:fixed;
+    left:0;
+    width:65px;
+    height:63px;
+    background-color:rgba(255,255,255,0.4); /* background color of music player wrapper */
+    border-radius:0px 30px 30px 0px;
+}
+
+.pressplay {z-index:999999; position:fixed; margin-top:10px; left:10px; cursor:pointer;}
+
+.pressplay:hover {left:0px; padding-left:160px;}
+
+.pressplay:hover ~ .dough {width:215px;}
+
+.pressplay:hover ~ .musicinfo {left:10px;}
+
+.musicinfo {
+    z-index:999998;
+    position:fixed;
+    margin-top:10px;
+    left:-140px;
+    width:140px;
+    height:40px;
+    background-color:#fff; /* background color of song info */
+    font-family:Karla; /* font of song info */
+    font-size:10px; /* font size of song info */
+    text-align:right;
+    display:table;
+}
+
+.pressplay, .dough, .musicinfo {
+    -webkit-transition: all 1.6s ease;
+    -moz-transition: all 1.6s ease;  
+    -o-transition: all 1.6s ease;  
+    -ms-transition: all 1.6s ease; 
+    transition: all 1.6s ease;
+}
+
+.infomid {display:table-cell; vertical-align:middle;}
+
+.infotext {max-height:40px; padding:0px 10px 0px 10px; overflow:auto;}
+
+.wonton {
+    width:40px;
+    height:40px;
+    background-color:#fff; /* background color of play button */
+    border-radius:100%;
+}
+
+.shrimp {padding-top:6px; margin-left:13px; width:15px; height:20px; background-color:transparent; overflow:hidden;}
+
+.onion {
+    display:block;
+    margin-left:1px;
+    margin-top:6px;
+    font-size:15px;
+    color:#111; /* color of play button */
+}
+
+.onionchange {display:none;}
+
+.mbar1, .mbar2, .mbar3, .mbar4, .mbar5 {
+    display:inline-block;
+    opacity:0;
+    margin-top:10px;
+    margin-right:-0.5px;
+    width:1px;
+    background-color:#111; /* color of player bars */
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    -ms-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+
+.mbar1 {
+    height:7px;
+    -webkit-animation-name: dance1;
+    -moz-animation-name: dance1;
+    -o-transition-name: dance1;
+    -ms-animation-name: dance1;
+    animation-name: dance1;
+    -webkit-animation-duration: 450ms;
+    -moz-animation-duration: 450ms;
+    -o-animation-duration: 450ms;
+    -ms-animation-duration: 450ms;
+    animation-duration: 450ms;
+}
+
+.mbar2 {
+    height:14px;
+    -webkit-animation-name: dance2;
+    -moz-animation-name: dance2;
+    -o-transition-name: dance2;
+    -ms-animation-name: dance2;
+    animation-name: dance2;
+    -webkit-animation-duration: 650ms;
+    -moz-animation-duration: 650ms;
+    -o-animation-duration: 650ms;
+    -ms-animation-duration: 650ms;
+    animation-duration: 650ms;
+}
+
+.mbar3 {
+    height:10px;
+    -webkit-animation-name: dance3;
+    -moz-animation-name: dance3;
+    -o-transition-name: dance3;
+    -ms-animation-name: dance3;
+    animation-name: dance3;
+    -webkit-animation-duration: 850ms;
+    -moz-animation-duration: 850ms;
+    -o-animation-duration: 850ms;
+    -ms-animation-duration: 850ms;
+    animation-duration: 850ms;
+}
+
+.mbar4 {
+    height:12px;
+    -webkit-animation-name: dance4;
+    -moz-animation-name: dance4;
+    -o-transition-name: dance4;
+    -ms-animation-name: dance4;
+    animation-name: dance4;
+    -webkit-animation-duration: 550ms;
+    -moz-animation-duration: 550ms;
+    -o-animation-duration: 550ms;
+    -ms-animation-duration: 550ms;
+    animation-duration: 550ms;
+}
+
+.mbar5 {
+    height:5px;
+    -webkit-animation-name: dance5;
+    -moz-animation-name: dance5;
+    -o-transition-name: dance5;
+    -ms-animation-name: dance5;
+    animation-name: dance5;
+    -webkit-animation-duration: 750ms;
+    -moz-animation-duration: 750ms;
+    -o-animation-duration: 750ms;
+    -ms-animation-duration: 750ms;
+    animation-duration: 750ms;
+}
+
+.lineschange {opacity:1;}
+
+@keyframes dance1 {50%{height:10px;}}
+@keyframes dance2 {50%{height:5px;}}
+@keyframes dance3 {50%{height:12px;}}
+@keyframes dance4 {50%{height:8px;}}
+@keyframes dance5 {50%{height:10px;}}
